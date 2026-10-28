@@ -25,8 +25,8 @@ The app's run instructions will be added as the project is built.
 - [x] Practice app selected: task tracker
 - [x] User stories and acceptance criteria drafted
 - [x] Waterfall and agile comparison written
-- [ ] Publish the repository as `yaswanth211825-training`
-- [ ] Add the reporting manager and other intern as collaborators
+- [x] Publish the repository as `training-repo`
+- [x] Add the reporting manager and other intern as collaborators
 - [ ] Create the GitHub Projects board and link the Day 1–10 core exercise issues
 - [ ] Open and merge a reviewed pull request
 - [ ] Complete merge conflict practice
