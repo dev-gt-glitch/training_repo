@@ -1,74 +1,74 @@
-# Task Tracker Requirements
+# Hotel Management App Requirements
 
 ## Product summary
 
-A small task tracker for one user to create and manage tasks. A task has a title, notes, status (`todo`, `doing`, or `done`), due date, and owner. The same entity will be used throughout the training exercises.
+This practice app is a small Airbnb-style hotel management app. Guests browse hotel rooms, view room details, make reservations, and manage their own reservations. Hotel staff manage rooms and reservations. The central entity used throughout the training plan is a reservation, linked to a room and a guest.
 
 ## User stories and acceptance criteria
 
-### 1. View tasks
+### 1. Browse rooms
 
-As a user, I want to see my tasks so I can understand what needs attention.
+As a guest, I want to view available rooms so I can choose a place to stay.
 
-- The list shows each task's title, status, due date, and owner.
-- An empty task list displays a clear empty state.
+- The room list shows a photo placeholder, room name, location, nightly price, capacity, and availability.
+- When no rooms match the current search, the app shows a clear empty state.
 
-### 2. Create a task
+### 2. View room details
 
-As a user, I want to create a task so I can record work I need to do.
+As a guest, I want to open a room so I can decide whether it suits my stay.
 
-- I can enter a title, notes, status, due date, and owner.
-- A task cannot be saved without a non-empty title.
-- After saving, the new task appears in the list.
+- The detail page shows the room description, amenities, price, capacity, location, and availability.
+- A missing room shows a clear not-found message.
 
-### 3. View task details
+### 3. Search and filter rooms
 
-As a user, I want to open a task so I can read all of its information.
+As a guest, I want to search and filter rooms so I can find a suitable stay.
 
-- The detail view shows every task field.
-- The detail view identifies a task that does not exist with a not-found message.
+- I can search by location.
+- I can filter by guest capacity and price range.
+- The list only shows rooms that meet the active filters.
 
-### 4. Edit a task
+### 4. Create a reservation
 
-As a user, I want to edit a task so I can keep its details current.
+As a guest, I want to reserve a room for chosen dates so I can plan my stay.
 
-- I can change the title, notes, status, due date, and owner.
-- The title remains required when saving changes.
-- The updated values appear in the list and detail view.
+- I can select available check-in and check-out dates and provide my guest details.
+- Check-out must be after check-in.
+- A reservation cannot be created when it overlaps an existing confirmed reservation for the room.
 
-### 5. Change task status
+### 5. View my reservations
 
-As a user, I want to mark a task as todo, doing, or done so its progress is clear.
+As a guest, I want to see my reservations so I can review my travel plans.
 
-- Only `todo`, `doing`, and `done` are accepted statuses.
-- The selected status is visible in the task list and detail view.
+- The list shows the room, dates, total price, and reservation status.
+- An empty reservation list displays a clear message.
 
-### 6. Delete a task
+### 6. Cancel a reservation
 
-As a user, I want to delete a task so obsolete work no longer appears.
+As a guest, I want to cancel an upcoming reservation so I can change my plans.
 
-- I can initiate deletion from the task list or detail view.
-- After deletion, the task is absent from the list.
-- Deleting a missing task returns a clear not-found result.
+- I can cancel an upcoming reservation from its detail page.
+- A cancelled reservation remains visible with its updated status.
+- Attempting to cancel a missing reservation returns a clear not-found result.
 
-### 7. Find tasks by status
+### 7. Manage rooms
 
-As a user, I want to filter tasks by status so I can focus on a subset of work.
+As hotel staff, I want to create and edit room listings so guests see accurate information.
 
-- I can select any supported status or view all tasks.
-- The list only shows tasks matching the selected filter.
-- An empty result displays a clear message.
+- Staff can create and update a room name, description, location, price, capacity, amenities, and availability.
+- A room name, price, and capacity are required.
+- Price and capacity must be positive values.
 
-### 8. Sign in and access tasks
+### 8. Sign in with a role
 
-As a user, I want to sign in so that task access can be protected.
+As a user, I want to sign in so the app can protect reservations and staff actions.
 
-- A user can sign in with valid credentials.
-- Invalid credentials do not grant access and produce a useful error.
-- Protected task operations reject requests without valid authentication.
+- Guests can sign in and access only their own reservations.
+- Staff can sign in and manage rooms and reservations.
+- Protected actions reject requests without valid authentication.
 
 ## Scope notes
 
-- The initial practice app is a single-entity task tracker.
-- Authentication and role permissions will be implemented later in the training plan.
-- Pagination, file uploads, and hosting are outside the core requirements.
+- Day 2 begins with static home, room-list, and reservation-form pages.
+- Later days add browser behavior, a TypeScript API, PostgreSQL persistence, a React UI, authentication, roles, tests, Docker, and CI.
+- Payments, real image uploads, maps, hosting, and advanced availability pricing are outside the core scope.
