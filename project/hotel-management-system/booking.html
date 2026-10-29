@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Room | Induvadana</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo-circle" aria-label="Induvadana home"><img src="Images/logo.svg" alt=""></a>
+        <nav class="navbar" aria-label="Main navigation"><a href="index.html">Home</a><a href="hotels.html">Hotels</a><a href="pages/login.html">Login</a></nav>
+    </header>
+    <main class="form-page">
+        <section class="signup-card" aria-labelledby="booking-heading">
+            <p class="hero-eyebrow">Almost there</p>
+            <h1 id="booking-heading">Complete your booking</h1>
+            <p><strong>Green Valley Hotel</strong> · Deluxe room · ₹4,500 per night</p>
+            <form action="invoice.html" method="get" class="simple-form">
+                <div class="form-group"><label for="guest-name">Full name</label><input id="guest-name" name="guest-name" autocomplete="name" required></div>
+                <div class="form-group"><label for="guest-email">Email address</label><input id="guest-email" name="email" type="email" autocomplete="email" required></div>
+                <div class="form-group"><label for="arrival">Check-in</label><input id="arrival" name="check-in" type="date" required></div>
+                <div class="form-group"><label for="departure">Check-out</label><input id="departure" name="check-out" type="date" required></div>
+                <div class="form-group"><label for="guest-count">Number of guests (maximum 2)</label><select id="guest-count" name="guests"><option>1</option><option selected>2</option></select></div>
+                <p class="price-note">Room total is calculated from your stay dates. Sample price: ₹4,500 per night.</p>
+                <button class="signup-button" type="submit">Confirm booking</button>
+            </form>
+        </section>
+    </main>
+    <footer><p>&copy; 2026 Induvadana</p></footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Booking | Induvadana</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo-circle" aria-label="Induvadana home"><img src="Images/logo.svg" alt=""></a>
+        <nav class="navbar" aria-label="Main navigation"><a href="index.html">Home</a><a href="hotels.html">Hotels</a></nav>
+    </header>
+    <main class="form-page">
+        <section class="signup-card" aria-labelledby="manage-heading">
+            <p class="hero-eyebrow">Your reservation</p>
+            <h1 id="manage-heading">Manage your booking</h1>
+            <p>Booking <strong>#IND-2048</strong> · Green Valley Hotel · Deluxe AC room</p>
+            <form action="invoice.html" method="get" class="simple-form">
+                <div class="form-group"><label for="manage-check-in">Check-in</label><input id="manage-check-in" name="check-in" type="date" value="2026-11-12" required></div>
+                <div class="form-group"><label for="manage-check-out">Check-out</label><input id="manage-check-out" name="check-out" type="date" value="2026-11-14" required></div>
+                <div class="form-group"><label for="manage-room">Room</label><select id="manage-room" name="room"><option>Deluxe · AC · ₹4,500 per night</option><option>Standard · Non-AC · ₹3,000 per night</option></select></div>
+                <div class="form-group"><label for="manage-guests">Guests (maximum 2)</label><select id="manage-guests" name="guests"><option>1</option><option selected>2</option></select></div>
+                <p class="price-note">Current total: ₹9,000 for 2 nights. Your updated total is shown before saving.</p>
+                <button class="signup-button" type="submit">Save changes</button>
+            </form>
+            <details class="cancel-booking"><summary>Cancel reservation</summary><p>Are you sure you want to cancel booking #IND-2048? This demo does not process a real cancellation.</p><p>Please contact the hotel to finish cancelling.</p></details>
+        </section>
+    </main>
+    <footer><p>&copy; 2026 Induvadana</p></footer>
+</body>
+</html>

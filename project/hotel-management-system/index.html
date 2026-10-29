@@ -22,14 +22,36 @@
     </header>
 
     <main>
-        <section aria-labelledby="welcome-heading">
-            <h1 id="welcome-heading" class="title">
-                Welcome to Induvadana
-            </h1>
-
-            <p class="subtitle">
-                A vibrant, luxurious and safe haven.
-            </p>
+        <section class="hero hero-home" aria-labelledby="welcome-heading">
+            <div class="hero-copy">
+                <p class="hero-eyebrow">Welcome to Induvadana</p>
+                <h1 id="welcome-heading" class="title">Find a stay that feels like yours</h1>
+                <p class="subtitle">Discover comfortable stays and memorable places across India.</p>
+            </div>
+            <form class="search-bar" action="hotels.html" method="get" aria-label="Search hotels">
+                <div class="search-field">
+                    <label for="destination">Destination</label>
+                    <input id="destination" name="destination" type="search" placeholder="Where would you like to go?">
+                </div>
+                <div class="search-field">
+                    <label for="check-in">Check-in</label>
+                    <input id="check-in" name="check-in" type="date" required>
+                </div>
+                <div class="search-field">
+                    <label for="check-out">Check-out</label>
+                    <input id="check-out" name="check-out" type="date" required>
+                </div>
+                <div class="search-field guests-field">
+                    <label for="guests">Guests</label>
+                    <select id="guests" name="guests">
+                        <option value="1">1 guest</option>
+                        <option value="2" selected>2 guests</option>
+                        <option value="3">3 guests</option>
+                        <option value="4">4 guests</option>
+                    </select>
+                </div>
+                <button class="search-button" type="submit">Search hotels</button>
+            </form>
         </section>
 
         <section class="hotels-section" aria-labelledby="hotels-heading">
@@ -44,7 +66,7 @@
                     loading="lazy"
                 >
                 <div class="hotel-card-content">
-                <h3>Green Valley Hotel</h3>
+                        <h3><a href="hotel-details.html">Green Valley Hotel</a></h3>
                 <p>A peaceful stay surrounded by nature.</p>
                 </div>
             </article>
@@ -57,7 +79,7 @@
                     loading="lazy"
                 >
                 <div class="hotel-card-content">
-                <h3>Royal Palace</h3>
+                <h3><a href="hotel-details.html">Royal Palace</a></h3>
                 <p>Experience comfort and luxury.</p>
                 </div>
             </article>
@@ -70,7 +92,7 @@
                     loading="lazy"
                 >
                 <div class="hotel-card-content">
-                <h3>City View Hotel</h3>
+                <h3><a href="hotel-details.html">City View Hotel</a></h3>
                 <p>Stay close to the city centre.</p>
                 </div>
             </article>
