@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Create an account for the practice application.">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Create your account</h1>
+        <p>Sign up to continue.</p>
+
+        <form>
+            <div>
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" autocomplete="new-password" minlength="8" required>
+                <p class="hint">Use at least 8 characters.</p>
+            </div>
+
+            <div>
+                <label for="confirm-password">Confirm password</label>
+                <input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" required>
+            </div>
+
+            <button type="submit">Create account</button>
+        </form>
+    </main>
+</body>
+</html>

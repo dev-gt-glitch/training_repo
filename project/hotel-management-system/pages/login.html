@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Induvadana</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/signup.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="logo-circle">
+            <img src="../Images/logo.svg" alt="Induvadana home">
+        </a>
+
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="../index.html">Home</a>
+            <a href="Login.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="signup-main">
+        <section class="signup-card" aria-labelledby="signin-heading">
+            <h1 id="signin-heading">Login to your account</h1>
+
+            <form id="login">
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        autocomplete="new-password"
+                        minlength="8"
+                        aria-describedby="password-help"
+                        placeholder="Create a password"
+                        required
+                    >
+                </div>
+
+
+                <button type="submit" class="signup-button">
+                     Login
+                </button>
+
+                <p id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Induvadana</p>
+    </footer>
+</body>
+</html>

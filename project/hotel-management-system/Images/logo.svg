@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" role="img" aria-labelledby="title desc">
+  <title id="title">Induvadana Hotel Chain logo</title>
+  <desc id="desc">A welcoming hotel emblem combining a gold roof and monogram, burgundy heart, green leaves, and elegant forest-green wordmark.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EBCB79"/>
+      <stop offset="0.52" stop-color="#C99A3B"/>
+      <stop offset="1" stop-color="#A87924"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#426F58"/>
+      <stop offset="1" stop-color="#214936"/>
+    </linearGradient>
+    <linearGradient id="burgundy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B73D4A"/>
+      <stop offset="1" stop-color="#7C2438"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Roof: the feeling of arriving somewhere safe and welcoming -->
+  <path d="M260 250 Q365 232 500 105 Q635 232 740 250 Q630 232 500 156 Q370 232 260 250Z" fill="url(#gold)"/>
+  <path d="M327 257 L500 153 L673 257" fill="none" stroke="#C99A3B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Heart-shaped welcome -->
+  <path d="M505 280 C465 224 382 235 379 303 C376 362 446 408 505 456 C564 408 634 362 631 303 C628 235 545 224 505 280Z" fill="url(#burgundy)"/>
+  <path d="M505 298 C475 258 420 264 418 308 C416 348 466 384 505 416 C544 384 594 348 592 308 C590 264 535 258 505 298Z" fill="none" stroke="#E7B6A8" stroke-opacity=".5" stroke-width="2.5"/>
+
+  <!-- Central monogram / doorway -->
+  <path d="M430 250 H570 V274 H550 V414 Q550 438 574 451 Q500 478 426 451 Q450 438 450 414 V274 H430Z" fill="url(#gold)"/>
+  <path d="M474 285 V398 Q474 422 500 436 Q526 422 526 398 V285Z" fill="#FFFDF7" opacity=".96"/>
+  <path d="M500 287 V435" stroke="#D8B45F" stroke-width="3"/>
+
+  <!-- Leaves and flowing ground line -->
+  <path d="M422 425 C353 411 326 357 337 321 C382 334 416 372 422 425Z" fill="url(#green)"/>
+  <path d="M422 425 C391 380 369 343 337 321" fill="none" stroke="#A6C2A6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M425 431 C397 373 406 323 448 298 C461 350 449 398 425 431Z" fill="#527C5C"/>
+  <path d="M425 431 C433 379 438 337 448 298" fill="none" stroke="#B5C8A5" stroke-width="3" stroke-linecap="round"/>
+  <path d="M333 458 C395 482 452 479 500 459 C555 436 617 439 671 468 C614 452 562 469 512 491 C448 518 381 502 333 458Z" fill="url(#gold)"/>
+  <path d="M361 474 C414 495 462 492 505 475 C559 453 605 460 643 479" fill="none" stroke="url(#green)" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Wordmark -->
+  <text x="500" y="585" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="65" letter-spacing="5" fill="#244B37">INDUVADANA</text>
+  <path d="M248 624 H390 M610 624 H752" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="414" cy="624" r="3.5" fill="#C99A3B"/>
+  <circle cx="586" cy="624" r="3.5" fill="#C99A3B"/>
+  <text x="500" y="635" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="8" fill="#A87924">HOTEL CHAIN</text>
+  <text x="500" y="684" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-style="italic" letter-spacing="1.5" fill="#52745C">A stay wrapped in warmth</text>
+</svg>
